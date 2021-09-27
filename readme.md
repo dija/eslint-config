@@ -36,5 +36,5 @@ module.exports = {
 
 NPM:
 ```
-npm publish --access public
+npm run publish
 ```
