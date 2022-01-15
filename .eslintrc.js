@@ -31,6 +31,9 @@ module.exports = {
         'import/no-cycle': 'off',
         'no-param-reassign': 'off',
         'no-nested-ternary': 'off',
+        'no-confusing-arrow': 'off',
+        'default-case': 'off',
+        'max-classes-per-file': 'off',
         'no-plusplus': [
             'error',
             {
@@ -56,6 +59,7 @@ module.exports = {
         '@typescript-eslint/no-use-before-define': 'off',
         '@typescript-eslint/unbound-method': 'off',
         '@typescript-eslint/require-await': 'off',
+        '@typescript-eslint/lines-between-class-members': 'off',
         '@typescript-eslint/no-misused-promises': [
             'error',
             {
