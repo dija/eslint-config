@@ -34,6 +34,7 @@ module.exports = {
         'no-confusing-arrow': 'off',
         'default-case': 'off',
         'max-classes-per-file': 'off',
+        'no-restricted-globals': 'off',
         'no-plusplus': [
             'error',
             {
@@ -60,6 +61,7 @@ module.exports = {
         '@typescript-eslint/unbound-method': 'off',
         '@typescript-eslint/require-await': 'off',
         '@typescript-eslint/lines-between-class-members': 'off',
+        '@typescript-eslint/restrict-plus-operands': 'off',
         '@typescript-eslint/no-misused-promises': [
             'error',
             {
