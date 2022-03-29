@@ -62,6 +62,9 @@ module.exports = {
         '@typescript-eslint/require-await': 'off',
         '@typescript-eslint/lines-between-class-members': 'off',
         '@typescript-eslint/restrict-plus-operands': 'off',
+        '@typescript-eslint/no-unsafe-argument': 'off',
+        '@typescript-eslint/quotes': 'off',
+        '@typescript-eslint/no-unnecessary-type-assertion': 'off',
         '@typescript-eslint/no-misused-promises': [
             'error',
             {
@@ -117,14 +120,7 @@ module.exports = {
         'no-underscore-dangle': 'off',
         'consistent-return': 'off',
         radix: 'off',
-        quotes: [
-            2,
-            'single',
-            {
-                avoidEscape: true,
-                allowTemplateLiterals: true,
-            },
-        ],
+        quotes: 'off',
         'import/no-extraneous-dependencies': 0,
         'no-use-before-define': 0,
         'vars-on-top': 0,
