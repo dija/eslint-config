@@ -15,6 +15,7 @@ module.exports = {
         node: true,
     },
     rules: {
+        'global-require': 'off',
         'no-console': 'off',
         'no-redeclare': 'off',
         'no-multiple-empty-lines': 'off',

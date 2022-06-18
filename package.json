@@ -1,6 +1,6 @@
 {
   "name": "@dijateam/eslint-config-taj",
-  "version": "2.0.2",
+  "version": "2.1.0",
   "description": "Taj ESLint and Prettier Configs for Javascript and Typescript packages.",
   "keywords": [
     "javascript",
@@ -23,33 +23,23 @@
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "eslint --fix",
+    "update": "pnpm update --latest --interactive",
     "publish": "npm publish --access public",
     "flush": "rm -rf node_modules package-lock.json"
   },
-  "peerDependencies": {
-    "@types/node": "^17.0.19",
+  "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.12.0",
     "@typescript-eslint/parser": "^5.12.0",
     "eslint": "^8.9.0",
-    "eslint-config-airbnb-typescript": "^16.1.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-prettier": "^4.0.0",
     "prettier": "^2.5.1",
-    "prettier-eslint": "^13.0.0",
-    "typescript": "^4.5.5"
+    "prettier-eslint": "^15.0.1"
   },
   "devDependencies": {
-    "@types/node": "^17.0.19",
-    "@typescript-eslint/eslint-plugin": "^5.12.0",
-    "@typescript-eslint/parser": "^5.12.0",
-    "eslint": "^8.9.0",
-    "eslint-config-airbnb-typescript": "^16.1.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-import": "^2.25.4",
-    "eslint-plugin-prettier": "^4.0.0",
-    "prettier": "^2.5.1",
-    "prettier-eslint": "^13.0.0",
+    "@types/node": "^18.0.0",
     "typescript": "^4.5.5"
   }
 }
