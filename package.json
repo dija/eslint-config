@@ -1,5 +1,5 @@
 {
-  "name": "@dijateam/eslint-config-taj",
+  "name": "@dijateam/eslint-config",
   "version": "2.1.0",
   "description": "Taj ESLint and Prettier Configs for Javascript and Typescript packages.",
   "keywords": [
@@ -11,20 +11,23 @@
     "config",
     "prettier"
   ],
+  "author": "Dija Team <info@dija.sa>",
+  "license": "MIT",
+  "repository": "https://github.com/dijateam/eslint-config",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "main": "index.js",
   "files": [
     "index.js",
     ".eslintrc.js",
     "tsconfig.json"
   ],
-  "repository": "git@github.com:dijateam/eslint-config-taj.git",
-  "author": "Dija Team <info@dija.sa>",
-  "license": "MIT",
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "eslint --fix",
     "update": "pnpm update --latest --interactive",
-    "publish": "npm publish --access public",
+    "release": "npm publish --access public",
     "flush": "rm -rf node_modules package-lock.json"
   },
   "dependencies": {
