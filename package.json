@@ -21,7 +21,8 @@
   "files": [
     "index.js",
     ".eslintrc.js",
-    "tsconfig.json"
+    "tsconfig.json",
+    "readme.md"
   ],
   "scripts": {
     "lint": "eslint .",
