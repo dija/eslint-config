@@ -1,6 +1,6 @@
 {
-  "name": "@dijateam/eslint-config",
-  "version": "2.1.0",
+  "name": "@dija/eslint-config",
+  "version": "2.1.1",
   "description": "Taj ESLint and Prettier Configs for Javascript and Typescript packages.",
   "keywords": [
     "javascript",
@@ -13,7 +13,7 @@
   ],
   "author": "Dija Team <info@dija.sa>",
   "license": "MIT",
-  "repository": "https://github.com/dijateam/eslint-config",
+  "repository": "https://github.com/dija/eslint-config",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },

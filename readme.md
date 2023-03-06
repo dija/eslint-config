@@ -1,40 +1,46 @@
-##### Install:
+# @dija/eslint-config
+
+## Install:
 
 Install as a dev dependency:
-```
-npm i @dijateam/eslint-config-taj --save-dev
+
+```bash
+npm i @dija/eslint-config --save-dev
 ```
 
 Or install all peer dependencies:
-```
-npx install-peerdeps --dev @dijateam/eslint-config-taj
-```
 
-Then add to `.eslintrc.js`
-```
-module.exports = {
-  extends: '@dijateam/eslint-config-taj',
-};
+```bash
+npx install-peerdeps --dev @dija/eslint-config
 ```
 
-----
+## Config
 
-##### Common issues:
+Add a `.eslintrc` file.
 
-`The file does not match your project config: .eslintrc.js.`
-
-Add this to `.eslintrc.js`
-```
-module.exports = {
-  ignorePatterns: ['.eslintrc.js'],
-};
+```json
+{
+  "extends": "@dija/eslint-config"
+}
 ```
 
-----
+## Typescript
 
-##### Publish:
+Add a `.eslintrc` file.
 
-NPM:
+```json
+{
+  "extends": "@dija/eslint-config",
+  "parserOptions": {
+    "project": "./tsconfig.eslint.json"
+  }
+}
 ```
-npm run publish
+
+Add a `tsconfig.eslint.json` file.
+
+```json
+{
+  "include": ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.mjs"]
+}
 ```
