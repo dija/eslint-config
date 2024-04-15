@@ -11,7 +11,7 @@ import {
     test2NormalFunc3,
     test2ShortObj2,
     test2ShortObj3,
-} from './test-2';
+} from './ts2';
 
 export {
     test2ArrowFunc,
@@ -26,7 +26,7 @@ export {
     test2NormalFunc3,
     test2ShortObj2,
     test2ShortObj3,
-} from './test-2';
+} from './ts2';
 
 console.log('Test:', {
     test2ArrowFunc,

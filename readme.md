@@ -8,12 +8,6 @@ Install as a dev dependency:
 npm i @dija/eslint-config --save-dev
 ```
 
-Or install all peer dependencies:
-
-```bash
-npx install-peerdeps --dev @dija/eslint-config
-```
-
 ## Config
 
 Add a `.eslintrc` file.
@@ -37,7 +31,7 @@ Add a `.eslintrc` file.
 }
 ```
 
-Add a `tsconfig.eslint.json` file.
+Add a `tsconfig.eslint.json` file and include your files.
 
 ```json
 {

@@ -9,7 +9,6 @@ module.exports = {
     parserOptions: {
         ecmaVersion: 2020,
         project: './tsconfig.json',
-        extraFileExtensions: ['.mjs'],
     },
     env: {
         browser: true,

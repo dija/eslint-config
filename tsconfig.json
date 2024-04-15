@@ -1,15 +1,10 @@
 {
-  "include": [
-    "**/*",
-    "**/.*"
-  ],
+  "include": ["*.js", "examples/*.*"],
   "compilerOptions": {
-    "types": [
-      "node"
-    ],
-    "target": "ES5",
-    "module": "commonjs",
+    "target": "ESNext",
+    "module": "ESNext",
     "strict": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "types": ["@types/node"]
   }
 }
