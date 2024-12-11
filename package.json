@@ -1,6 +1,6 @@
 {
   "name": "@dija/eslint-config",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "description": "Dija ESLint and Prettier Configs for Javascript and Typescript packages.",
   "keywords": [
     "javascript",
@@ -24,9 +24,6 @@
     "tsconfig.json",
     "README.md"
   ],
-  "engines": {
-    "node": "^18.18.0 || >=20.0.0"
-  },
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "eslint --fix",

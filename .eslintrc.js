@@ -36,12 +36,7 @@ module.exports = {
         'default-case': 'off',
         'max-classes-per-file': 'off',
         'no-restricted-globals': 'off',
-        'no-plusplus': [
-            'error',
-            {
-                allowForLoopAfterthoughts: true,
-            },
-        ],
+        'no-plusplus': 'off',
         'no-restricted-syntax': ['warn', 'LabeledStatement', 'WithStatement'],
         '@typescript-eslint/no-unused-vars': 'warn',
         '@typescript-eslint/no-var-requires': 'off',
@@ -126,6 +121,10 @@ module.exports = {
         'no-use-before-define': 0,
         'vars-on-top': 0,
         'prefer-object-spread': 0,
+
+        '@typescript-eslint/no-redundant-type-constituents': 'off',
+        '@typescript-eslint/no-duplicate-type-constituents': 'off',
+
         'prettier/prettier': [
             'warn',
             {
