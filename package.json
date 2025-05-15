@@ -1,14 +1,11 @@
 {
   "name": "@dija/eslint-config",
-  "version": "2.2.1",
+  "version": "3.0.0",
   "description": "Dija ESLint and Prettier Configs for Javascript and Typescript packages.",
   "keywords": [
     "javascript",
     "typescript",
-    "ecmascript",
     "eslint",
-    "lint",
-    "config",
     "prettier"
   ],
   "author": "Dija Team <info@dija.sa>",
@@ -17,30 +14,30 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
-  "main": "index.js",
+  "main": "index.mjs",
+  "type": "module",
   "files": [
-    "index.js",
-    ".eslintrc.js",
+    "index.mjs",
     "tsconfig.json",
     "README.md"
   ],
   "scripts": {
-    "lint": "eslint .",
-    "lint:fix": "eslint --fix",
+    "lint": "eslint . --ext .js,.ts",
+    "lint:fix": "eslint . --ext .js,.ts --fix",
+    "format": "prettier --write .",
     "release": "npm publish --access public",
     "flush": "rm -rf node_modules package-lock.json"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^7.7.0",
-    "@typescript-eslint/parser": "^7.7.0",
-    "eslint": "^8.57.0",
-    "eslint-config-airbnb-typescript": "^18.0.0",
-    "eslint-plugin-prettier": "^5.1.3",
-    "prettier": "^3.2.5",
-    "prettier-eslint": "^16.3.0"
+    "typescript-eslint": "^8.32.1",
+    "eslint": "^9.26.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-prettier": "^5.4.0",
+    "prettier": "^3.5.0"
   },
+  "peerDependencies": {},
   "devDependencies": {
-    "@types/node": "^18.0.0",
-    "typescript": "^5.0.0"
+    "@types/node": ">=18.0.0",
+    "typescript": ">=5.0.0"
   }
 }

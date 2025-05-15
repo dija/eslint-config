@@ -1,10 +1,12 @@
 {
-  "include": ["*.js", "examples/*.*"],
+  "include": ["index.mjs", "eslint.config.mjs", "examples/*.*"],
   "compilerOptions": {
     "target": "ESNext",
     "module": "ESNext",
     "strict": true,
+    "skipLibCheck": true,
     "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
     "types": ["@types/node"]
   }
 }
