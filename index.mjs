@@ -1,6 +1,18 @@
 import eslint from '@eslint/js';
 import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
+import { existsSync } from 'fs';
+import { join } from 'path';
+import { cwd } from 'process';
 import tseslint from 'typescript-eslint';
+
+const dir = cwd();
+
+let tsConfig = join(dir, 'tsconfig.json');
+const tsEslintConfig = join(dir, 'tsconfig.eslint.json');
+
+if (existsSync(tsEslintConfig)) {
+    tsConfig = tsEslintConfig;
+}
 
 export default tseslint.config([
     // 1. Global ignores
@@ -31,8 +43,7 @@ export default tseslint.config([
     {
         languageOptions: {
             parserOptions: {
-                project: true,
-                tsconfigRootDir: import.meta.dirname,
+                project: tsConfig,
                 ecmaFeatures: { jsx: true },
             },
         },
@@ -43,6 +54,7 @@ export default tseslint.config([
         rules: {
             'global-require': 'off',
             'no-console': 'off',
+            'no-empty': 'off',
             'no-redeclare': 'off',
             'no-multiple-empty-lines': 'off',
             'no-trailing-spaces': 'off',

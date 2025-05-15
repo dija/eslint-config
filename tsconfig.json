@@ -1,5 +1,5 @@
 {
-  "include": ["index.mjs", "eslint.config.mjs", "examples/*.*"],
+  "include": ["index.mjs", "index.ts", "eslint.config.mjs", "examples/*.*"],
   "compilerOptions": {
     "target": "ESNext",
     "module": "ESNext",
@@ -7,6 +7,9 @@
     "skipLibCheck": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "types": ["@types/node"]
+    "types": ["@types/node"],
+    "paths": {
+      "eslint/config": ["./node_modules/@eslint/config-helpers/dist/cjs/index.d.cts"]
+    }
   }
 }

@@ -15,9 +15,11 @@
     "registry": "https://npm.pkg.github.com/"
   },
   "main": "index.mjs",
+  "types": "index.ts",
   "type": "module",
   "files": [
     "index.mjs",
+    "index.ts",
     "tsconfig.json",
     "README.md"
   ],
