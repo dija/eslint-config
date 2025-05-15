@@ -78,6 +78,8 @@ export default tseslint.config([
             'no-restricted-syntax': ['warn', 'LabeledStatement', 'WithStatement'],
             'no-debugger': 'off',
             'no-alert': 'off',
+            'no-self-assign': 'off',
+            'no-extra-boolean-cast': 'off',
             'no-await-in-loop': 'off',
             'no-return-assign': ['error', 'except-parens'],
             'no-unused-vars': [

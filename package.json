@@ -1,6 +1,6 @@
 {
   "name": "@dija/eslint-config",
-  "version": "3.0.0",
+  "version": "3.0.2",
   "description": "Dija ESLint and Prettier Configs for Javascript and Typescript packages.",
   "keywords": [
     "javascript",

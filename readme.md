@@ -10,28 +10,18 @@ npm i @dija/eslint-config --save-dev
 
 ## Config
 
-Add a `.eslintrc` file.
+Add a `eslint.config.mjs` file.
 
-```json
-{
-  "extends": "@dija/eslint-config"
-}
+```js
+import configs from '@dija/eslint-config';
+import { defineConfig } from 'eslint/config';
+
+export default defineConfig(configs);
 ```
 
 ## Typescript
 
-Add a `.eslintrc` file.
-
-```json
-{
-  "extends": "@dija/eslint-config",
-  "parserOptions": {
-    "project": "./tsconfig.eslint.json"
-  }
-}
-```
-
-Add a `tsconfig.eslint.json` file and include your files.
+(Optional) Add a `tsconfig.eslint.json` file and include your files.
 
 ```json
 {
