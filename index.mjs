@@ -145,6 +145,7 @@ export default tseslint.config([
             '@typescript-eslint/no-unnecessary-type-assertion': 'off',
             '@typescript-eslint/no-redundant-type-constituents': 'off',
             '@typescript-eslint/no-duplicate-type-constituents': 'off',
+            '@typescript-eslint/no-empty-object-type': 'off',
             '@typescript-eslint/no-misused-promises': [
                 'error',
                 {
